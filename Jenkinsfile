@@ -1,4 +1,4 @@
-pipeline {
+  pipeline {
  agent any
  tools {
   maven 'maven3.6.0'
@@ -23,7 +23,7 @@ pipeline {
   stage('Deploy') {
    steps {
     sh "java -jar target/spring-boot-first-web-application-git-0.0.1-SNAPSHOT.jar"
-   }
+   } 
   }
   /*stage('publish') {
    steps {
@@ -32,3 +32,4 @@ pipeline {
   }*/
  }
 }
+      
