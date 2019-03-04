@@ -1,4 +1,5 @@
   pipeline {
+
  agent any
  tools {
   maven 'maven3.6.0'
@@ -22,7 +23,7 @@
   }
   stage('Deploy') {
    steps {
-    sh "JENKINS_NODE_COOKIE=do_not_kill_me java nohup -jar target/spring-boot-first-web-application-git-0.0.1-SNAPSHOT.jar & "
+    sh "JENKINS_NODE_COOKIE=do_not_kill_me  nohup java -jar target/spring-boot-first-web-application-git-0.0.1-SNAPSHOT.jar & "
    } 
   }
   /*stage('publish') {
