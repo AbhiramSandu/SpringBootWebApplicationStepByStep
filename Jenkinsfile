@@ -22,7 +22,7 @@ pipeline {
   }
   stage('Deploy') {
    steps {
-    sh '"java -jar target/spring-boot-first-web-application-git-0.0.1-SNAPSHOT.jar" &'
+    sh "java -jar target/spring-boot-first-web-application-git-0.0.1-SNAPSHOT.jar"
    }
   }
   /*stage('publish') {
