@@ -3,7 +3,7 @@
 	
 	<div class="container">
 		<table class="table table-striped">
-			<caption>Your todos are</caption>
+			<caption>Your todos are as follows</caption>
 			<thead>
 				<tr>
 					<th>Description</th>
