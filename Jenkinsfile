@@ -25,10 +25,10 @@ pipeline {
     sh '"java -jar target/spring-boot-first-web-application-git-0.0.1-SNAPSHOT.jar" &'
    }
   }
-  stage('publish') {
+  /*stage('publish') {
    steps {
     sh 'curl -X PUT -u admin:APB4oSbMxjG67dX7gZdt2oPHD4m -T target/spring-boot-first-web-application-git-0.0.1-SNAPSHOT.jar "http://52.42.121.49:8081/artifactory/libs-snapshot/spring-boot-first-web-application-git-0.0.1-SNAPSHOT.jar"'
    }
-  }
+  }*/
  }
 }
