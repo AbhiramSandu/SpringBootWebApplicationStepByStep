@@ -30,7 +30,7 @@
     }
    stage('Stoping the server') {
        steps {
-        sh "fuser -k 123/tcp"
+        sh "fuser -k 9001/tcp"
        }
       }
     stage('Deploy') {
